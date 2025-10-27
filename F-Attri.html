@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Attributes</title>
+</head>
+<body>
+    <h1>Learn Form Attributes</h1>
+    <form action="">   <!-- form applys validation by default -->
+        f_name: <input type="text" name="Fname" id="" autofocus><br><br> 
+        <!-- the autofocus attribute automatically sets focus to an input field when a page loads  -->
+        L_name: <input type="text" name="Lname" id="" required><br><br>
+        <!-- the required attribute makes an input field mandatory before form submission -->
+        Email: <input type="email" name="email" id="" ><br><br>
+        city: <input type="text" name="city" id="" autocomplete="off"><br><br>
+        <!-- the autocomplete attribute controls whether a form field can be automatically filled by the browser based on previously entered values. -->
+        file: <input type="file" name="" id="" accept="*"><br><br>
+        <!-- the accept attribute specifies the types of files that an <input type="file"> element can accept. -->
+        <input type="submit" name="" id="">
+        <input type="submit" name="" id="" value="save" formnovalidate>
+        <!-- formnovalidate is used on a submit button to skip form validation when that button is clicked -->
+    </form>
+
+    <hr>
+
+    <h1>Method</h1>
+    <!-- the method attribute defines how form data is sent to the server when the form is submitted. -->
+     <!-- get → Sends data in the URL (visible, for simple or search forms). -->
+    <!-- post → Sends data in the request body (hidden, for sensitive info or large data). -->
+    <form action="">
+        <!-- the action attribute defines where (which URL or file) the form’s data will be sent when it’s submitted. -->
+        f_name: <input type="text" name="Fname" id="" placeholder="Enter Your First Name"><br><br>
+        <!-- the placeholder attribute provides a hint or example text inside an input field — it disappears when the user starts typing. -->
+        city: <input type="text" name="city" id="" value="kalyan" readonly><br><br>
+        <!-- the readonly attribute makes an input field non-editable, but its value can still be seen and submitted with the form. -->
+        <input type="submit" name="" id="" formmethod="post">
+        <input type="submit" name="" id="" formmethod="get">
+        <!-- the formmethod attribute is used on a submit button to override the form’s method attribute for that specific button. -->
+
+    </form>
+
+    <hr><br>
+    <h3>Form Remaining Attributes</h3>
+
+    <form action="">
+        Number: <input type="number" name="" id="" min="5" max="10"><br><br>
+        <!-- min usually refers to min attribute used with input elements like <input type="number"> or <input type="range"> -->
+        Range: <input type="range" name="" id="" min="1" max="10"><br><br>
+        <!-- min usually refers to max attribute used with input elements like <input type="number"> or <input type="range"> -->
+        date: <input type="date" name="" id="" min="2025-10-26"><br><br>
+        date: <input type="date" name="" id="" max="2025-10-26"><br><br>
+        f_name: <input type="text" name="" id="" minlength="5" maxlength="8"><br><br>
+        <!-- minlength is an attribute for input fields that specifies the minimum number of characters a user must enter. -->
+        l_name: <input type="text" name="" id="" pattern="[a-zA-Z0-9]+"><br><br>
+        <!-- The pattern attribute is used with input fields to define a regular expression that the input value must match. -->
+        email: <input type="email" name="" id="" multiple><br><br>
+        <!-- the multiple attribute is used with input fields (like <input> or <select>) to allow more than one value to be selected or uploaded. -->
+
+        <fieldset>
+            <legend>Address</legend>
+            city: <input type="text" name="" id="">
+            Pincode: <input type="text" name="" id="">
+        </fieldset><br><br>
+
+        <select name="" id="">
+            <option value="">None</option>
+            <optgroup label="Marvel">
+                <option value="Captain">Captain</option>
+                <option value="ironman">ironman</option>
+                <option value="thor">thor</option>
+            </optgroup>
+            <optgroup label="DC">
+                <option value="batman">batman</option>
+                <option value="superman">superman</option>
+                <option value="flash">flash</option>
+            </optgroup>
+        </select>
+        <br><br>
+
+        <input type="submit" name="" id="">
+
+    </form>
+</body>
+</html>
