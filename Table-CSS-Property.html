@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table css Property</title>
+    <style>
+        table,tr,td{
+            border: 2px solid black;
+            /* border-collapse: collapse; */
+            /* border-spacing: 10px; */
+            border-radius: 10px;
+
+            empty-cells: hide;
+            padding: 10px;
+            background-color: yellowgreen;
+        }
+        caption{
+            caption-side: bottom;
+        }
+        th{
+            border: 2px solid black;
+            border-radius: 5px;
+            background-color: gray;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Avenger Table</caption>
+        <tr>
+            <th>Marvel</th>
+            <th>Dc-comic</th>
+            <th>Willan</th>
+        </tr>
+        <tr>
+            <td>iron-man</td>
+            <td>batman</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>hulk</td>
+            <td></td>
+            <td>hella</td>
+        </tr>
+        <tr>
+            <td>Thor</td>
+            <td>Flash</td>
+            <td>Zolla</td>
+        </tr>
+    </table>
+</body>
+</html>
