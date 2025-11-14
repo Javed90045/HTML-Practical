@@ -35,5 +35,18 @@ arr.forEach((_,ele)=>{
 });
 
 console.log(arr);
+ // WAP to print factorial of an array element using MAP method
+ console.log("WAP to print factorial of an array element using MAP method")
+ let arr1 = [1,2,3,4,5];
+let newArr = arr1.map((ele)=>{
+    let fact =1;
+    for(let i=1; i<=ele; i++)
+    {
+        fact*= i;
+    }
+    return fact;
+});
+
+console.log(newArr);
 
 
