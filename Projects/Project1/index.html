@@ -4,51 +4,93 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Finance Wala</title>
-    <link rel="stylesheet" href="style.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container-fluid">
-        <!-- <a class="navbar-brand text-white" href="#">Navbar</a> -->
-         <img src="Gemini_Generated_Image_rj5aa4rj5aa4rj5a-removebg-preview.png" alt="logo" id="logo-img" >
-        
+        <a class="navbar-brand text-white" href="#">Finance Wala</a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active text-white" aria-current="page" href="#"
-                >Home</a
-              >
+              <a class="nav-link active" href="#">Home</a>
             </li>
+
             <li class="nav-item">
-              <a class="nav-link text-white" href="#">Link</a>
+              <a class="nav-link" href="#">Link</a>
             </li>
+
             <li class="nav-item dropdown">
               <a
-                class="nav-link dropdown-toggle text-white"
+                class="nav-link dropdown-toggle"
                 href="#"
                 role="button"
                 data-bs-toggle="dropdown"
-                aria-expanded="false"
               >
-                Dropdown
+                Secured Loan
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider" /></li>
                 <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
+                  <a class="dropdown-item" href="#">Mortgage/Home Loan</a>
                 </li>
+                <li>
+                  <a class="dropdown-item" href="#">Loan Against Property</a>
+                </li>
+                <li><a class="dropdown-item" href="#">Auto Loan</a></li>
               </ul>
             </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+              >
+                UnSecured Loan
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="#">Mortgage/Home Loan</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">Loan Against Property</a>
+                </li>
+                <li><a class="dropdown-item" href="#">Auto Loan</a></li>
+              </ul>
+            </li>
+
+            <!-- ⭐ Added About Us -->
+            <li class="nav-item">
+              <a class="nav-link" href="#">About Us</a>
+            </li>
+
+            <!-- ⭐ Added Contact Us -->
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact Us</a>
+            </li>
           </ul>
+
           <form class="d-flex" role="search">
             <input
               class="form-control me-2"
@@ -61,17 +103,6 @@
             </button>
           </form>
         </div>
-        <button
-          class="navbar-toggler bg-white"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
       </div>
     </nav>
 
@@ -124,29 +155,105 @@
       </button>
     </div>
 
+    <!-- Home Page Content -->
+    <div class="container my-5">
+      <h2 class="text-center mb-4">Welcome to Finance Wala</h2>
+
+      <p class="text-center fs-5">
+        Your trusted partner for all types of secured and unsecured loans. We
+        help you get the best loan options with minimum documentation and the
+        fastest approval.
+      </p>
+
+      <div class="row mt-5">
+        <!-- Secured Loan -->
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h4 class="card-title">Secured Loans</h4>
+              <p class="card-text">
+                Avail high-value loans at low interest rates by keeping your
+                property as security. Choose from Home Loan, Loan Against
+                Property, or Auto Loan.
+              </p>
+              <a href="#" class="btn btn-dark">Learn More</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Unsecured Loan -->
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h4 class="card-title">Unsecured Loans</h4>
+              <p class="card-text">
+                Get instant approval for Personal Loans, Business Loans, or
+                Medical Loans without any collateral. Quick processing and
+                flexible EMI options.
+              </p>
+              <a href="#" class="btn btn-dark">Learn More</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Why Choose Us -->
+        <div class="col-md-4 mb-4">
+          <div class="card h-100 shadow-sm">
+            <div class="card-body">
+              <h4 class="card-title">Why Finance Wala?</h4>
+              <ul>
+                <li>Fast Loan Sanction within 24–48 hours</li>
+                <li>Hassle-free digital process</li>
+                <li>Lowest interest rates</li>
+                <li>Maximum funding eligibility</li>
+                <li>Expert guidance throughout the process</li>
+              </ul>
+              <a href="#" class="btn btn-dark">Get Started</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Footer -->
     <div class="container mb-2">
       <footer class="py-3 my-4">
-        <ul class="nav justify-content-center border-bottom border-dark   pb-3 mb-3">
+        <ul
+          class="nav justify-content-center border-bottom border-dark pb-3 mb-3"
+        >
           <li class="nav-item">
             <a href="#" class="nav-link px-2 text-body-secondary">Home</a>
           </li>
+
           <li class="nav-item">
-            <a href="#" class="nav-link px-2 text-body-secondary">Features</a>
+            <a href="#" class="nav-link px-2 text-body-secondary">Link</a>
           </li>
+
           <li class="nav-item">
-            <a href="#" class="nav-link px-2 text-body-secondary">Pricing</a>
+            <a href="#" class="nav-link px-2 text-body-secondary"
+              >Secured Loan</a
+            >
           </li>
+
           <li class="nav-item">
-            <a href="#" class="nav-link px-2 text-body-secondary">FAQs</a>
+            <a href="#" class="nav-link px-2 text-body-secondary"
+              >UnSecured Loan</a
+            >
           </li>
+
           <li class="nav-item">
-            <a href="#" class="nav-link px-2 text-body-secondary">About</a>
+            <a href="#" class="nav-link px-2 text-body-secondary">About Us</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#" class="nav-link px-2 text-body-secondary">Contact Us</a>
           </li>
         </ul>
+
         <p class="text-center text-body-secondary">© 2025 Finance Wala, Inc</p>
       </footer>
     </div>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
