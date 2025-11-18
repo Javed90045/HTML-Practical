@@ -17,7 +17,7 @@ function avenger(name, lname){
     return {
         f_name: name,
         l_name: lname
-    }
+    }   
 }
 
 let a = avenger('steve','roger');
