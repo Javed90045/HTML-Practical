@@ -30,7 +30,7 @@ decrease.onclick = () => {
   dec();
 };
 
-reset.onclick = () => {
+reset.onclick = () => {   
   v = 0;
   display.value = v;
   dec();
